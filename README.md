@@ -8,6 +8,9 @@ Requirements are differnt for each Spider.
 
 [2] edx
 
+    1. Python 2.7
+    2. Scrapy
+
 [3] open2study
 
 [4] xuetangx
@@ -25,6 +28,10 @@ Usage:
 [1] Coursera
 
 [2] edx
+
+    1. Change the path to .py you want to run in the command line 
+    
+    2. scrapy crawl edx -o ./data/items.json
 
 [3] open2study
 
