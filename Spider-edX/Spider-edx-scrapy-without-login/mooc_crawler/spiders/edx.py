@@ -13,7 +13,6 @@ Course_URL_API="https://www.edx.org/api/v1/catalog/search?page=1&page_size=1254&
 
 class EdxSpider(Spider):
 
-    #重写Scrapy中的class-Spider
     name = "edx"
     allowed_domains =["edx.org","https://www.edx.org",]
     start_urls = (Course_URL_API, )
@@ -21,7 +20,6 @@ class EdxSpider(Spider):
     #    for url in self.start_urls:
     #        yield self.make_requests_from_url(url)
 
-    #重写Scrapy中的class-Spider下的函数parse
     def parse(self, response):
         data = json.loads(response.body)
         data = data[u'objects'][u'results']
