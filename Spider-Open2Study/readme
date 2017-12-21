@@ -1,0 +1,13 @@
+# open2study
+
+The code can be run directly.
+
+Users need to fill in the:
+
+    the path of phantomJS(line 25)
+    
+    Account Information:
+    
+        username(line 28)
+        
+        password(line 29)
