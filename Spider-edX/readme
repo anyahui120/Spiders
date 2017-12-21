@@ -1,0 +1,7 @@
+#Spider for edx
+
+The code can be run directly.
+Users need to fil in the information:
+    The path of PhantomJS(line 25)
+    Username(line 28)
+    Password(line 29)
