@@ -22,11 +22,11 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 # 建立浏览器对象 ，通过Phantomjs
-browser = webdriver.PhantomJS('C:\\Users\\workshop\\Desktop\\phantomjs.exe')
+browser = webdriver.PhantomJS('e')
 # 设置访问的url
 # SIGNIN_URL = 'https://www.open2study.com/login'
-email = 'an6582807003@yeah.net'
-password = 'kkJ-2vg-SeF-zrs'
+email = ''
+password = ''
 
 
 # Crawl the dashboard for all the current courses.
