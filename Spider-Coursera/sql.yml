@@ -1,0 +1,7 @@
+database_path: C:/Users/workshop/Desktop/Wikifier-master/Wikifier-master/server-master/data-crawl/MOOCDB.db
+create_course_table: CREATE TABLE 'course' ('courseNameSlug' TEXT, 'courseId' TEXT, 'courseHomePage' TEXT, 'platform' TEXT);
+create_instructor_table: CREATE TABLE 'instructor' ( 'courseId' TEXT, 'fullName' TEXT, 'lastName' TEXT, 'firstName' TEXT, 'department' TEXT);
+create_session_table: CREATE TABLE 'session' ( 'courseId' TEXT, 'startedAt' TEXT, 'endedAt' TEXT);
+create_item_table: CREATE TABLE 'resource_item' ('courseNameSlug' TEXT, 'itemId' TEXT, 'isLocked' INTEGER, 'lessonId' TEXT, 'moduleId' TEXT, 'name' TEXT, 'slug' TEXT, 'typeName' TEXT, 'item_order' INTEGER, 'actualURL' TEXT);
+create_lesson_table: CREATE TABLE 'resource_lesson' ('courseNameSlug' TEXT, 'lessonId' TEXT, 'moduleId' TEXT, 'name' TEXT, 'slug' TEXT, 'lesson_order' INTEGER, 'actualURL' TEXT);
+create_module_table: CREATE TABLE 'resource_module' ('courseNameSlug' TEXT, 'moduleId' TEXT, 'name' TEXT, 'slug' TEXT, 'module_order' INTEGER, 'actualURL' TEXT);
