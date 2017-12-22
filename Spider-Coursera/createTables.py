@@ -25,6 +25,17 @@ class CreateTables:
         self.c = self.conn.cursor()
 
 
+    def create_course_table(self):
+        """
+        Create table instructor, columns are courseId, fullName, lastName, firstName, department
+        :return: 100
+        """
+        self.c.execute('drop table if exists course')
+        create_inst_table = self.sql['create_course_table']
+        self.c.execute(create_inst_table)
+        self.conn.commit()
+        return 100
+
     def create_instructor_table(self):
         """
         Create table instructor, columns are courseId, fullName, lastName, firstName, department
@@ -85,6 +96,7 @@ class CreateTables:
         Create all tables conveniently.
         :return:
         """
+        self.create_course_table()
         self.create_session_table()
         self.create_item_table()
         self.create_instructor_table()
@@ -92,3 +104,9 @@ class CreateTables:
         self.create_module_table()
         self.conn.commit()
         self.conn.close()
+
+
+if  __name__ == "__main__":
+    ct = CreateTables()
+    ct.__init__()
+    ct.create_all_tables()
