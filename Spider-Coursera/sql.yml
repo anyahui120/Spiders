@@ -1,4 +1,4 @@
-database_path: C:/Users/workshop/Desktop/Wikifier-master/Wikifier-master/server-master/data-crawl/MOOCDB.db
+database_path: 
 create_course_table: CREATE TABLE 'course' ('courseNameSlug' TEXT, 'courseId' TEXT, 'courseHomePage' TEXT, 'platform' TEXT);
 create_instructor_table: CREATE TABLE 'instructor' ( 'courseId' TEXT, 'fullName' TEXT, 'lastName' TEXT, 'firstName' TEXT, 'department' TEXT);
 create_session_table: CREATE TABLE 'session' ( 'courseId' TEXT, 'startedAt' TEXT, 'endedAt' TEXT);
