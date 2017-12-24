@@ -4,7 +4,7 @@
 # @Time    :
 
 '''
-    Attempt at auto-downloading the actual urls of videos and other materials from open2study.com
+    Attempt at auto-downloading the actual urls of videos and other materials from iversity.com
     TODO: Do proper argument handling and associated processing
     - specify e-mail, password
     - download available courses in you own account
@@ -22,7 +22,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 # 建立浏览器对象 ，通过Phantomjs
-browser = webdriver.PhantomJS('e')
+browser = webdriver.PhantomJS('')
 # 设置访问的url
 # SIGNIN_URL = 'https://www.open2study.com/login'
 email = ''
