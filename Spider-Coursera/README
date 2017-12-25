@@ -1,0 +1,7 @@
+The main function is Coursera_crawler.py.
+
+Step 1: createTables.py;
+Step 2: Coursera_crawler.py;
+Step 3: insertActualURL.py
+
+Then all the resource data will be saved in the database.
