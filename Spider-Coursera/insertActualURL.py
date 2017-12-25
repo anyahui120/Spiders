@@ -5,7 +5,7 @@
 
 import sqlite3
 
-database = '../courseraD.db'
+database = ''
 conn = sqlite3.connect(database)
 c = conn.cursor()
 
