@@ -49,6 +49,7 @@ class PageAnalyser:
         self.courses = []
 
     def login(self):
+        #to set_window_size
         self.driver.set_window_size(1124, 850)
         self.driver.get('https://www.coursera.org/?authMode=login')
         self.driver.implicitly_wait(100)
